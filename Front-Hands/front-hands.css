@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  overflow-x: hidden;
+}
+
+header {
+  height: 6vh;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main {
+  min-width: 960px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__logo img {
+  width: 120px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-right: 30px;
+}
+ul {
+  list-style-type: none;
+}
+
+.nav__links ul {
+  display: flex;
+  align-items: center;
+}
+
+.mobile__menu span {
+  display: block;
+  margin-bottom: 5px;
+  width: 34px;
+  height: 4px;
+  background: black;
+}
+.mobile__menu {
+  display: none;
+}
+
+@media screen and (max-width: 1170px) {
+  /* .mobile__menu {
+    display: block;
+  }
+  .nav__links {
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    top: 6.5vh;
+  }
+
+  .nav__links ul {
+    background-color: aqua;
+    flex-direction: column;
+    height: 370px;
+    width: 512px;
+    font-size: 30px;
+  } */
+}
+
+/* Layout Left Aside */
+.layout__content {
+  display: grid;
+  grid-template-columns: 411px 1fr 411px;
+  width: 100vw;
+  margin-top: 2rem;
+  gap: 10px;
+  padding: 0 1rem;
+}
+
+.layout__content__left-aside__container {
+  background-color: rgb(0, 0, 0);
+  height: calc(93vh - 2rem);
+  width: 411px;
+}
+.layout__content__right-aside__container {
+  background-color: rgb(0, 0, 0);
+  height: calc(93vh - 2rem);
+  width: 411px;
+}
+
+.layout__content__right-feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  grid-gap: 1rem 1rem;
+  height: calc(93vh - 2rem);
+  overflow: auto;
+  min-width: 600px;
+}
+
+.link__content {
+  background-color: rgb(206, 206, 206);
+  aspect-ratio: 1/0.85;
+}
+
+.link__content:nth-child(odd) {
+  background-color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 1475px) {
+  .layout__content {
+    grid-template-columns: 411px 1fr;
+  }
+  .layout__content__right-aside,
+  .layout__content__right-aside__container {
+    display: none;
+  }
+}
