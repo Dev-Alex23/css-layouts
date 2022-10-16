@@ -65,6 +65,33 @@ main {
   border: 1.5px solid #eceef1;
 }
 
+.news__content__link {
+  display: flex;
+  padding: 1rem;
+  width: 100%;
+  border-bottom: 1px solid #eceef1;
+}
+.link__entry__number {
+  min-width: 30px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 30px;
+}
+
+.link__entry__desc {
+  font-size: 13.4px;
+  padding-left: 25px;
+}
+
+.article__details {
+  color: #87969d;
+  margin-top: 0.6rem;
+  font-size: 12px;
+}
+
 .feed__news__content_description {
   width: 100%;
   height: calc(100vh - 7rem);
