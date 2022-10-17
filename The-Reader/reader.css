@@ -58,8 +58,33 @@ main {
   min-width: 240px;
   height: calc(100vh - 7rem);
   border: 1.5px solid #eceef1;
+  overflow: auto;
 }
+
+.feed__content__category {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  border-bottom: 1px solid #eceef1;
+  height: 35px;
+}
+
+.feed__content__category span {
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+}
+
+.feed__content__category p {
+  margin-left: 1.3rem;
+}
+
 .feed__news__content {
+  overflow: auto;
   min-width: 411px;
   height: calc(100vh - 7rem);
   border: 1.5px solid #eceef1;
